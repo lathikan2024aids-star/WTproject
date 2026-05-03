@@ -1,0 +1,199 @@
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Hotel Booking</title>
+
+<style>
+
+/* BODY BACKGROUND */
+
+body{
+margin:0;
+font-family:Segoe UI;
+
+background-image:url("https://images.unsplash.com/photo-1566073771259-6a8506099945");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+height:100vh;
+color:white;
+text-align:center;
+}
+
+/* NAVIGATION BAR */
+
+.nav{
+background:rgba(0,0,0,0.8);
+padding:15px;
+}
+
+.nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-size:18px;
+padding:8px 15px;
+border-radius:6px;
+transition:0.3s;
+}
+
+.nav a:hover{
+background:#ff9800;
+transform:scale(1.1);
+}
+
+/* BOOKING FORM */
+
+.booking-container{
+
+width:380px;
+margin:auto;
+margin-top:80px;
+
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(15px);
+
+padding:30px;
+
+border-radius:15px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.6);
+
+animation:fadeUp 1.5s;
+
+}
+
+/* INPUT FIELDS */
+
+input,select{
+
+width:90%;
+padding:12px;
+margin:10px;
+
+border:none;
+border-radius:8px;
+
+font-size:15px;
+outline:none;
+
+transition:0.3s;
+
+}
+
+/* INPUT GLOW */
+
+input:focus,select:focus{
+box-shadow:0 0 12px #FFD700;
+}
+
+/* BUTTON */
+
+button{
+
+background:#ff9800;
+border:none;
+
+padding:12px 25px;
+
+color:white;
+font-size:17px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+button:hover{
+
+background:#ff5722;
+transform:scale(1.1);
+
+}
+
+/* ANIMATION */
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+</style>
+
+<script>
+
+/* BOOKING FUNCTION */
+
+function bookRoom(){
+
+alert("🎉 Booking Successful!");
+
+window.location.href="bill.html";
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="nav">
+
+<a href="index.html">🏠 Home</a>
+<a href="login.html">🔐 Login</a>
+<a href="catalogue.html">🛏 Rooms</a>
+<a href="gallery.html">📸 Gallery</a>
+<a href="booking.html">📋 Booking</a>
+<a href="bill.html">💰 Bill</a>
+<a href="location.html">📍 Location</a>
+
+</div>
+
+<div class="booking-container">
+
+<h2>📋 Book Your Room</h2>
+
+<input type="text" placeholder="👤 Full Name">
+
+<input type="email" placeholder="📧 Email">
+
+<input type="date">
+
+<select>
+
+<option>Select Room Type</option>
+<option>Single Room</option>
+<option>Double Room</option>
+<option>Deluxe Room</option>
+
+</select>
+
+<input type="number" placeholder="🛏 Number of Nights">
+
+<br><br>
+
+<button onclick="bookRoom()">Confirm Booking</button>
+
+</div>
+
+</body>
+</html>
+```

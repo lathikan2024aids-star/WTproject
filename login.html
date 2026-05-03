@@ -1,0 +1,107 @@
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Hotel Login</title>
+
+<style>
+
+body{
+font-family:Segoe UI;
+background-image:url("https://images.unsplash.com/photo-1566073771259-6a8506099945");
+background-size:cover;
+color:white;
+text-align:center;
+}
+
+.nav{
+background:rgba(0,0,0,0.8);
+padding:15px;
+}
+
+.nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-size:18px;
+}
+
+form{
+background:rgba(0,0,0,0.7);
+width:320px;
+margin:auto;
+margin-top:80px;
+padding:30px;
+border-radius:10px;
+}
+
+input{
+width:90%;
+padding:10px;
+margin:10px;
+border:none;
+border-radius:6px;
+}
+
+button{
+background:#ff9800;
+border:none;
+color:white;
+padding:10px 20px;
+}
+
+</style>
+
+<script>
+
+function login(){
+
+var u=document.getElementById("user").value;
+var p=document.getElementById("pass").value;
+
+if(u=="admin" && p=="1234")
+{
+alert("Login Successful");
+window.location="catalogue.html";
+}
+else
+{
+alert("Invalid Login");
+}
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="nav">
+<a href="login.html">🔐 Login</a>
+<a href="catalogue.html">🛏 Rooms</a>
+<a href="gallery.html">📸 Gallery</a>
+<a href="booking.html">📋 Booking</a>
+<a href="bill.html">💰 Bill</a>
+<a href="location.html">📍 Location</a>
+</div>
+
+<form>
+
+<h2>Hotel Login</h2>
+
+<input type="text" id="user" placeholder="Username">
+
+<input type="password" id="pass" placeholder="Password">
+
+<br><br>
+
+<button type="button" onclick="login()">Login</button>
+
+</form>
+
+</body>
+</html>
+```

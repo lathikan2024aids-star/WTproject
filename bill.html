@@ -1,0 +1,257 @@
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Hotel Bill & Gallery</title>
+
+<style>
+
+/* BODY BACKGROUND */
+
+body{
+margin:0;
+font-family:Segoe UI;
+
+background-image:url("https://images.unsplash.com/photo-1551882547-ff40c63fe5fa");
+background-size:cover;
+background-position:center;
+
+color:white;
+text-align:center;
+}
+
+/* NAVIGATION */
+
+.nav{
+background:rgba(0,0,0,0.8);
+padding:15px;
+}
+
+.nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-size:18px;
+padding:8px 15px;
+border-radius:6px;
+transition:0.3s;
+}
+
+.nav a:hover{
+background:#ff9800;
+transform:scale(1.1);
+}
+
+/* BILL CARD */
+
+.bill-container{
+
+width:400px;
+margin:auto;
+margin-top:80px;
+
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(15px);
+
+padding:30px;
+
+border-radius:15px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.6);
+
+animation:fadeUp 1.5s;
+
+}
+
+/* INPUT */
+
+input{
+
+width:90%;
+padding:12px;
+margin:10px;
+
+border:none;
+border-radius:8px;
+
+font-size:16px;
+outline:none;
+
+}
+
+/* BUTTON */
+
+button{
+
+background:#ff9800;
+border:none;
+
+padding:12px 25px;
+
+color:white;
+
+font-size:17px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+button:hover{
+
+background:#ff5722;
+transform:scale(1.1);
+
+}
+
+/* RESULT */
+
+#result{
+
+margin-top:20px;
+font-size:22px;
+color:#FFD700;
+
+}
+
+/* GALLERY SECTION */
+
+.gallery{
+
+margin-top:80px;
+
+}
+
+.gallery h2{
+margin-bottom:20px;
+}
+
+/* IMAGE GRID */
+
+.gallery-container{
+
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+
+}
+
+.gallery-container img{
+
+width:260px;
+height:170px;
+
+margin:15px;
+
+border-radius:10px;
+
+transition:0.4s;
+
+box-shadow:0 5px 15px black;
+
+}
+
+/* HOVER EFFECT */
+
+.gallery-container img:hover{
+
+transform:scale(1.1);
+box-shadow:0 10px 25px black;
+
+}
+
+/* ANIMATION */
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+</style>
+
+<script>
+
+function calculateBill(){
+
+var days=document.getElementById("days").value;
+
+var price=2000;
+
+var total=days*price;
+
+document.getElementById("result").innerHTML="💰 Total Bill : ₹ "+total;
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="nav">
+
+<a href="index.html">🏠 Home</a>
+<a href="login.html">🔐 Login</a>
+<a href="catalogue.html">🛏 Rooms</a>
+<a href="gallery.html">📸 Gallery</a>
+<a href="booking.html">📋 Booking</a>
+<a href="bill.html">💰 Bill</a>
+<a href="location.html">📍 Location</a>
+
+</div>
+
+<!-- BILL SECTION -->
+
+<div class="bill-container">
+
+<h2>💰 Hotel Bill</h2>
+
+<input type="number" id="days" placeholder="Enter Number of Nights">
+
+<br><br>
+
+<button onclick="calculateBill()">Calculate Bill</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+<!-- GALLERY SECTION -->
+
+<div class="gallery">
+
+<h2>📸 Hotel Gallery</h2>
+
+<div class="gallery-container">
+
+<img src="https://images.unsplash.com/photo-1590490360182-c33d57733427">
+
+<img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4">
+
+<img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
+
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+
+</div>
+
+</div>
+
+</body>
+</html>
+```

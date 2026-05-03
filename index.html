@@ -1,0 +1,128 @@
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Luxury Paradise Hotel</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Segoe UI;
+background-image:url("https://images.unsplash.com/photo-1520250497591-112f2f40a3f4");
+background-size:cover;
+background-position:center;
+height:100vh;
+color:white;
+}
+
+/* NAVIGATION BAR */
+
+.nav{
+background:rgba(0,0,0,0.8);
+padding:15px;
+text-align:center;
+}
+
+.nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-size:18px;
+padding:8px 15px;
+border-radius:6px;
+transition:0.3s;
+}
+
+.nav a:hover{
+background:#ff9800;
+transform:scale(1.1);
+}
+
+/* HERO SECTION */
+
+.hero{
+text-align:center;
+margin-top:150px;
+animation:fadeIn 2s;
+}
+
+.hero h1{
+font-size:60px;
+color:#FFD700;
+}
+
+.hero p{
+font-size:22px;
+}
+
+/* BUTTON */
+
+.btn{
+margin-top:20px;
+background:#ff9800;
+padding:12px 25px;
+border:none;
+border-radius:6px;
+font-size:18px;
+cursor:pointer;
+color:white;
+}
+
+.btn:hover{
+background:#ff5722;
+transform:scale(1.1);
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="nav">
+
+<a href="index.html">🏠 Home</a>
+<a href="login.html">🔐 Login</a>
+<a href="catalogue.html">🛏 Rooms</a>
+<a href="gallery.html">📸 Gallery</a>
+<a href="booking.html">📋 Booking</a>
+<a href="bill.html">💰 Bill</a>
+<a href="location.html">📍 Location</a>
+
+</div>
+
+<div class="hero">
+
+<h1>Luxury Paradise Hotel</h1>
+
+<p>Experience Comfort, Luxury and Happiness</p>
+
+<a href="catalogue.html">
+<button class="btn">Explore Rooms</button>
+</a>
+
+</div>
+
+</body>
+</html>
+```
